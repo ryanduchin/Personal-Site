@@ -1427,6 +1427,18 @@
 				font-size: 0.75em;
 			}
 
+		/* Projects */
+		 #projects img {
+			height: 175px;
+			margin-bottom: 10px;
+		}
+
+		#projects header p {
+			font-size: 14px;
+			line-height: 150%;
+		}
+
+
 	}
 
 /* Mobile */
