@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require jquery.min
-//= require bootstrap
 //= require skel.min
 //= require skel-viewport.min
 //= require turbolinks
