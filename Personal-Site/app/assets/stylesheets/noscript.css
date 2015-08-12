@@ -21,7 +21,7 @@
 		}
 
 			#nav a:before, #nav a:after {
-				display: none;
+				/*display: none;*/
 			}
 
 			#nav a span {
