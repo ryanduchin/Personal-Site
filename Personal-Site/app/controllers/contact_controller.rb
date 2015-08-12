@@ -4,10 +4,22 @@ class ContactController < ApplicationController
       email = params[:email]
       subject = params[:subject]
       message = params[:message]
-      UserMailer.contact_email(name, email, subject, message).deliver
-      UserMailer.confirm_email(name, email, subject, message).deliver
+      if valid_email(email)
+        p 'hey'
+        UserMailer.contact_email(name, email, subject, message).deliver
+        UserMailer.confirm_email(name, email, subject, message).deliver
+        flash.now.notice = "Message Sent!"
+        redirect_to root_url
+      else
+        flash.now.alert = "Error: Invalid email!"
+        redirect_to root_url(anchor: 'contact')
+      end
+  end
 
-      redirect_to root_url, notice: 'Message sent'
+  private
+
+  def valid_email(email)
+    (/\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/ =~ email) != nil
   end
 
 end

@@ -21,7 +21,10 @@
 					<article id="me" class="panel">
 						<header>
 							<h1>Ryan Duchin</h1>
-							<p>Engineer and Junior Software Developer</p>
+							<p>Engineer and Software Developer</p>
+							<% if flash.notice %>
+								<br><%= flash.notice.html_safe %><br>
+							<% end %>
 						</header>
 						<a href="#projects" class="jumplink pic">
 							<span class="arrow icon fa-chevron-right">
@@ -86,6 +89,9 @@
 								<header>
 									<h2>Contact Me</h2>
 								</header>
+								<% if flash.alert %>
+									<br><%= flash.alert.html_safe %><br>
+								<% end %>
 								<form action="send_mail" method="post">
 									<div>
 										<div class="row">
