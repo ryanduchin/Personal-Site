@@ -1,14 +1,15 @@
-##SITE README
+##Site Readme
 
 This is a site made to display my ongoing projects, resume, and contact information.
 
-I customized an HTML5UP template
+I customized a basic HTML5UP Astral template. In order to get the contact
+function working, I migrated the template to Rails.
 
-In order to get the contact function working, I moved the template to Rails,
-and I used ActionMailer to send emails to myself and the site visitor.
+I used ActionMailer to send emails to myself and the site visitor when the
+contact form is submitted.
 
 
-##TEMPLATE README
+##Template Readme
 
 Astral by HTML5 UP
 html5up.net | @n33co
