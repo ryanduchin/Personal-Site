@@ -14,9 +14,9 @@
  *= require_self
  */
 
-@import "bootstrap-sprockets";
+/*@import "bootstrap-sprockets";
 @import "bootstrap";
-/*@import "font-awesome";*/
+@import "font-awesome";*/
 
 @import url('/app/assets/css/main.css');
 @import url('css/main.css');
