@@ -32,6 +32,9 @@ gem 'newrelic_rpm'
 
 gem 'pg'
 
+# store credentials for sendgrid
+gem 'figaro', '~> 0.7'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
