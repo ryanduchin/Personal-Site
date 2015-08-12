@@ -7,7 +7,7 @@ class ContactController < ApplicationController
       UserMailer.contact_email(name, email, subject, message).deliver
       UserMailer.confirm_email(name, email, subject, message).deliver
 
-      redirect_to root, notice: 'Message sent'
+      redirect_to root_url, notice: 'Message sent'
   end
 
 end

@@ -11,9 +11,9 @@
  * file per style scope.
  *
  *= require font-awesome
- *= require main
- *= require noscript
  *= require ie8
+ *= require noscript
+ *= require main
  *= require_tree .
  *= require_self
  */
