@@ -1435,6 +1435,14 @@
 		#projects header p {
 			font-size: 14px;
 			line-height: 150%;
+			position: relative;
+		}
+
+		#projects header a.github {
+			font-size: 9px;
+			position: absolute;
+			right: 5px;
+			text-decoration: none;
 		}
 
 
