@@ -1,4 +1,5 @@
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+/*@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");*/
+@import url('http://fonts.googleapis.com/css?family=Armata');
 
 /*
 	Astral by HTML5 UP
@@ -749,7 +750,7 @@
 		background-image: url("/assets/overlay.png"), url("/assets/sky.jpeg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Armata', sans-serif;
 		font-weight: 300;
 		color: #777777;
 	}
@@ -766,7 +767,7 @@
 		}
 
 	input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Armata', sans-serif;
 		font-weight: 300;
 		color: #777777;
 	}
