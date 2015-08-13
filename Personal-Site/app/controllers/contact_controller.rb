@@ -5,14 +5,14 @@ class ContactController < ApplicationController
       subject = params[:subject]
       message = params[:message]
       if valid_email(email)
-        p 'hey'
         UserMailer.contact_email(name, email, subject, message).deliver
         UserMailer.confirm_email(name, email, subject, message).deliver
-        flash.now.notice = "Message Sent!"
-        redirect_to root_url
+        # flash.now.notice = "Message Sent!"
+        redirect_to root_url, notice: "Message Sent!"
       else
-        flash.now.alert = "Error: Invalid email!"
-        redirect_to root_url(anchor: 'contact')
+        # flash.now.alert = "Error: Invalid email!"
+        flash.keep
+        redirect_to root_url(anchor: 'contact'), notice: "Error invalid email"
       end
   end
 

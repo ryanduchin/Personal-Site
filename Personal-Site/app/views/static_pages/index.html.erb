@@ -88,10 +88,10 @@
 							<article id="contact" class="panel">
 								<header>
 									<h2>Contact Me</h2>
-								</header>
-								<% if flash.alert %>
-									<br><%= flash.alert.html_safe %><br>
+								<% if flash.notice %>
+									<p><%= flash.notice.html_safe %></p>
 								<% end %>
+								</header>
 								<form action="send_mail" method="post">
 									<div>
 										<div class="row">
