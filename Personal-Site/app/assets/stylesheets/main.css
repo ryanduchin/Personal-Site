@@ -746,7 +746,7 @@
 /* Basic */
 
 	body {
-		background-image: url("/assets/overlay.png"), url("/assets/textured_paper.png");
+		background-image: url("/assets/overlay.png"), url("/assets/sky.jpeg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		font-family: 'Source Sans Pro', sans-serif;
@@ -1062,7 +1062,7 @@
 		width: 1em;
 		height: 1em;
 		line-height: 0.9em;
-		color: #742C2C;
+		color: #FFFFFF;
 	}
 
 		#nav a.icon:before {

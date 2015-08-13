@@ -6,6 +6,8 @@
 
 (function($) {
 
+	var CORR_FACTOR = 5;
+
 	var settings = {
 
 		// Speed to resize panel.
@@ -77,9 +79,9 @@
 
 					$body._reposition = function() {
 						if (skel.vars.touch && (window.orientation == 0 || window.orientation == 180))
-							$wrapper.css('padding-top', Math.max((($window.height() - (panels[activePanelId].outerHeight() + $footer.outerHeight())) / 2) - $nav.height(), 30)/5 + 'px');
+							$wrapper.css('padding-top', Math.max((($window.height() - (panels[activePanelId].outerHeight() + $footer.outerHeight())) / 2) - $nav.height(), 30) / CORR_FACTOR + 'px');
 						else
-							$wrapper.css('padding-top', ((($window.height() - panels[firstPanelId].height()) / 2) - $nav.height())/5 + 'px');
+							$wrapper.css('padding-top', ((($window.height() - panels[firstPanelId].height()) / 2) - $nav.height()) / CORR_FACTOR + 'px');
 					};
 
 				// Panels.
@@ -118,7 +120,7 @@
 									window.location.hash = '#' + id;
 
 							// Add bottom padding.
-								var x = parseInt($wrapper.css('padding-top')) +
+								var x = parseInt($wrapper.css('padding-top')) * CORR_FACTOR +
 										panels[id].outerHeight() +
 										$nav.outerHeight() +
 										$footer.outerHeight();
