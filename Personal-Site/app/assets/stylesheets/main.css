@@ -1059,11 +1059,11 @@
 	#nav a {
 		position: relative;
 		display: inline-block;
-		color: #ffffff;
 		width: 1em;
 		height: 1em;
 		line-height: 0.9em;
 		color: #FFFFFF;
+		/*color: #742C2C;*/
 	}
 
 		#nav a.icon:before {

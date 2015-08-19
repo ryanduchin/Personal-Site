@@ -1862,7 +1862,7 @@
 
 
 	body {
-		background-image: url("images/textured_paper.png");
+		background-image: url("images/sky.jpeg");
 		background-size: cover;
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 	}
@@ -2630,7 +2630,7 @@
 /* Basic */
 
 	body {
-		background-image: url("images/overlay.png"), url("images/textured_paper.png");
+		background-image: url("images/overlay.png"), url("images/sky.jpeg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		font-family: 'Armata', sans-serif;
