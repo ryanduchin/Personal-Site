@@ -1099,6 +1099,23 @@
 			z-index: 1;
 		}
 
+	#me #external_nav a {
+		color: #196187;
+		position: relative;
+		top: 100px;
+		font-size: 1.5em;
+		margin-left: 100px;
+		margin-right: 100px;
+		float:left;
+		width:30px;
+		text-align:center;
+	}
+
+	#me #external_nav a:hover {
+		color: #502323;
+		font-size: 2.5em;
+	}
+
 /* Footer */
 
 	#footer {
