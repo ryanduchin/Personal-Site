@@ -1099,6 +1099,23 @@
 			z-index: 1;
 		}
 
+	@keyframes zoomin {
+		0% {
+			font-size: 0.001em;
+			opacity: 0;
+			transform:rotate(0deg);
+		}
+		50% {
+			transform:rotate(360deg);
+			opacity: 0.5;
+			font-size: 0.5em;
+		}
+		to {
+			font-size: 1.5em;
+			opacity: 1;
+		}
+	}
+
 	#me #external_nav a {
 		color: #196187;
 		position: relative;
@@ -1109,11 +1126,13 @@
 		float:left;
 		width:30px;
 		text-align:center;
+		animation-name: zoomin;
+		animation-duration: 2.5s;
 	}
 
 	#me #external_nav a:hover {
 		color: #502323;
-		font-size: 2.5em;
+		font-size: 2.2em;
 	}
 
 /* Footer */
