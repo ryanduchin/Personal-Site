@@ -21,7 +21,8 @@
 /* Nav */
 
 	#nav a span {
-		display: none !important;
+		/* removed an 'important' from this line. wasn't working in chrome */
+		display: none;
 	}
 
 	#nav a:before {
