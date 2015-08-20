@@ -7,7 +7,7 @@
 /* Basic */
 
 	body {
-		background-image: url("images/sky.jpeg");
+		background-image: url("http://res.cloudinary.com/dwpmjcdhz/image/upload/v1440042470/sky_eqft9c.jpg");
 		background-size: cover;
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 	}
