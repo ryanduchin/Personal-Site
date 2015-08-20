@@ -744,7 +744,7 @@
 /* Basic */
 
 	body {
-		background-image: url("/assets/overlay.png"), url("http://res.cloudinary.com/dwpmjcdhz/image/upload/v1440042470/sky_eqft9c.jpg");
+		background-image: url("/assets/overlay.png"), url("https://res.cloudinary.com/dwpmjcdhz/image/upload/v1440042470/sky_eqft9c.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		font-family: 'Armata', sans-serif;
