@@ -6,6 +6,7 @@
 
 (function($) {
 
+	// rescales distance between top of window and top of nav
 	var CORR_FACTOR = 5;
 
 	var settings = {
@@ -239,6 +240,8 @@
 				}, 50);
 
 			});
+
+		$('#external_nav a').addClass('loaded');
 
 	});
 

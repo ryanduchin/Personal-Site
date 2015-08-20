@@ -1101,9 +1101,12 @@
 
 	@keyframes zoomin {
 		0% { font-size: 1.5em; }
-		50% { font-size: 1em; }
+		50% {
+			font-size: 1em; 
+			transform:rotate(540deg);
+		}
 		75% {
-			font-size: 1.4em;
+			/*font-size: 1.4em;*/
 			transform:rotate(640deg);
 		}
 		100% {
@@ -1119,19 +1122,22 @@
 		font-size: 1.5em;
 		margin-left: 100px;
 		margin-right: 100px;
-		float:left;
-		width:30px;
-		text-align:center;
-		animation-name: zoomin;
-		animation-delay: 4s;
-		animation-duration: 0.8s;
-		animation-timing-function: linear;
+		float: left;
+		width: 30px;
+		text-align: center;
 	}
 
 	#me #external_nav a:hover {
 		color: #502323;
 		font-size: 2.2em;
 	}
+
+	#me #external_nav .loaded {
+		animation-name: zoomin;
+		animation-duration: 0.8s;
+		animation-timing-function: linear;
+	}
+
 
 /* Contact */
 	header #alert {
