@@ -95,7 +95,7 @@
 									<p id='alert'><%= flash.alert.html_safe %></p>
 								<% end %>
 								</header>
-								<form action="send_mail" method="post">
+								<%= form_tag 'send_mail#contact' do %>
 									<div>
 										<div class="row">
 											<div class="6u 12u$(mobile)">
@@ -115,7 +115,7 @@
 											</div>
 										</div>
 									</div>
-								</form>
+								<% end %>
 							</article>
 
 					</div>

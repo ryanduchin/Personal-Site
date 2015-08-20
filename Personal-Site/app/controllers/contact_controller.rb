@@ -7,14 +7,11 @@ class ContactController < ApplicationController
       if valid_email(email)
         UserMailer.contact_email(name, email, subject, message).deliver
         UserMailer.confirm_email(name, email, subject, message).deliver
-        flash.notice = "Message Sent!"
-        # flash[:notice] = "Message sent!"
+        flash.alert = "Message Sent!"
         render "static_pages/index"
       else
         flash.alert = "Error: Invalid email!"
-        # flash.keep
-        # redirect_to root_url(anchor: 'contact'), notice: "Error invalid email"
-        render "static_pages/index#contact"
+        render "static_pages/index"
       end
   end
 
