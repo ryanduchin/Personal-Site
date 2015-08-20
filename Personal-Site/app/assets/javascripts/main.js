@@ -237,11 +237,17 @@
 
 				window.setTimeout(function() {
 					location.reload(true);
+
 				}, 50);
 
 			});
 
-		$('#external_nav a').addClass('loaded');
+		// icon animation
+
+		window.setTimeout(function() {
+			$('#external_nav a').addClass('loaded');
+			$('#resume iframe').attr('src', 'https://drive.google.com/file/d/0B9gktNBqJoXvMFR2R2pHRHNud0E/preview')
+		}, 100);
 
 	});
 

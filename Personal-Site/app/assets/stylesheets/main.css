@@ -1102,11 +1102,10 @@
 	@keyframes zoomin {
 		0% { font-size: 1.5em; }
 		50% {
-			font-size: 1em; 
+			font-size: 1em;
 			transform:rotate(540deg);
 		}
 		75% {
-			/*font-size: 1.4em;*/
 			transform:rotate(640deg);
 		}
 		100% {
@@ -1134,6 +1133,7 @@
 
 	#me #external_nav .loaded {
 		animation-name: zoomin;
+		animation-delay: 0.2s;
 		animation-duration: 0.8s;
 		animation-timing-function: linear;
 	}
