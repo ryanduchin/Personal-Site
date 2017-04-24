@@ -2,7 +2,7 @@ class UserMailer < ApplicationMailer
   def admin_contact_email(name, email, subject, message)
       @name = name
       @email = email
-      @note_subject = subject
+      @subject = subject
       @message = message
       @email_subject = "Contact via ryanduchin.com from #{@name}"
       mail(to: 'ryanduchin@gmail.com', from: @email, subject: @email_subject)
