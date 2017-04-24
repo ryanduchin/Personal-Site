@@ -84,24 +84,27 @@
 							<article id="contact" class="panel">
 								<header>
 									<h2>Contact Me</h2>
-								<% if flash.alert %>
+								<% if flash.now[:alert] %>
 									<p id='alert'><%= flash.alert.html_safe %></p>
+								<% end %>
+								<% if flash.now[:notice] %>
+									<p id='notice'><%= flash.notice.html_safe %></p>
 								<% end %>
 								</header>
 								<%= form_tag 'send_mail#contact' do %>
 									<div>
 										<div class="row">
 											<div class="6u 12u$(mobile)">
-												<input type="text" name="name" placeholder="Name"/>
+												<input type="text" name="name" placeholder="Name" value= <%= @name %> >
 											</div>
 											<div class="6u$ 12u$(mobile)">
-												<input type="text" name="email" placeholder="Email" />
+												<input type="text" name="email" placeholder="Email" value= <%= @email %> >
 											</div>
 											<div class="12u$">
-												<input type="text" name="subject" placeholder="Subject" />
+												<input type="text" name="subject" placeholder="Subject" value= <%= @subject %> >
 											</div>
 											<div class="12u$">
-												<textarea name="message" placeholder="Message" rows="8"></textarea>
+												<textarea name="message" placeholder="Message" rows="8"><%= @message %></textarea>
 											</div>
 											<div class="12u$">
 												<input type="submit" value="Send Message" />
@@ -112,4 +115,5 @@
 							</article>
 
 					</div>
+	<% flash.clear %>
 	</div>

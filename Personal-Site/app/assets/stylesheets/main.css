@@ -1141,6 +1141,10 @@
 		color: red;
 	}
 
+	header #notice {
+		color: green;
+	}
+
 /* Footer */
 
 	#footer {
