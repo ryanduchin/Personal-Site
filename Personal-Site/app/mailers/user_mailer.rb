@@ -1,24 +1,17 @@
 class UserMailer < ApplicationMailer
-  default to: 'ryanduchin@gmail.com'
-  default from: 'ryanduchin@gmail.com'
-
-
-  def contact_email(name, email, subject, message)
+  def admin_contact_email(name, email, subject, message)
       @name = name
       @email = email
-      @subject = subject
+      @note_subject = subject
       @message = message
-
-      mail(from: email, subject: 'Ryanduchin.com Contact')
+      @email_subject = "Contact via ryanduchin.com from #{@name}"
+      mail(to: 'ryanduchin@gmail.com', from: @email, subject: @email_subject)
   end
 
-  def confirm_email(name, email, subject, message)
+  def message_confirmation_email(name, email, subject, message)
       @name = name
-      @email = email
-      @subject = subject
-      @message = message
+      @email_subject = 'Contact Confirmation - ryanduchin.com'
 
-      mail(to: email, subject: 'Ryanduchin.com Contact')
+      mail(to: email, from: 'ryanduchin@gmail.com', subject: @email_subject)
   end
-
 end

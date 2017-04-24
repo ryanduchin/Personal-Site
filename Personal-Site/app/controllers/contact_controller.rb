@@ -5,9 +5,9 @@ class ContactController < ApplicationController
     @subject = params[:subject]
     @message = params[:message]
     if valid_email_address?
-      UserMailer.confirm_email(@name, @email, @subject, @message).deliver
+      UserMailer.message_confirmation_email(@name, @email, @subject, @message).deliver
       if email_parameters_are_present? #stricter logic to reduce spam
-        UserMailer.contact_email(@name, @email, @subject, @message).deliver
+        UserMailer.admin_contact_email(@name, @email, @subject, @message).deliver
       end
       flash.notice = "Thank you for your message!"
     else
