@@ -4,7 +4,7 @@ class UserMailer < ApplicationMailer
       @email = email
       @subject = subject
       @message = message
-      @email_subject = "Contact via ryanduchin.com from #{@name}"
+      @email_subject = "Contact Via ryanduchin.com From #{@name}"
       mail(to: 'ryanduchin@gmail.com', from: @email, subject: @email_subject)
   end
 
