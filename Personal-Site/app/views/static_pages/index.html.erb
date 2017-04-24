@@ -94,8 +94,9 @@
 								<%= form_tag 'send_mail#contact' do %>
 									<div>
 										<div class="row">
+											<input type="text" name="name" placeholder="Name" style="display: none;" value="<%= @hidden_blank_field %>" >
 											<div class="6u 12u$(mobile)">
-												<input type="text" name="name" placeholder="Name" value="<%= @name %>" >
+												<input type="text" name="contact_name" placeholder="Name" value="<%= @name %>" >
 											</div>
 											<div class="6u$ 12u$(mobile)">
 												<input type="text" name="email" placeholder="Email" value="<%= @email %>" >
