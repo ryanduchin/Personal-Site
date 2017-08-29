@@ -246,7 +246,7 @@
 
 		window.setTimeout(function() {
 			$('#external_nav a').addClass('loaded');
-			$('#resume iframe').attr('src', 'https://drive.google.com/file/d/0B9gktNBqJoXvMFR2R2pHRHNud0E/preview')
+			// $('#resume iframe').attr('src', LINK)
 		}, 50);
 
 	});
